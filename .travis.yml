@@ -17,6 +17,6 @@ env:
   - TERM=dumb
 
 script:
-  - travis_wait ./gradlew --debug clean build -PtestLoggingStarted=true -PwikiBranch=origin/master
+  - travis_wait ./gradlew --debug clean build distZip -PtestLoggingStarted=true -PwikiBranch=origin/master
 
 #test
