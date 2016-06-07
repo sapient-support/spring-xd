@@ -19,6 +19,6 @@ env:
 install: true
 
 script:
-  - travis_wait ./gradlew --debug clean build distZip -x test -PtestLoggingStarted=true -PwikiBranch=origin/master
+  - ./gradlew clean build distZip -x test
 
 #test
