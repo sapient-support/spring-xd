@@ -19,6 +19,6 @@ env:
 install: true
 
 script:
-  - ./gradlew clean build install -x test
+  - ./gradlew --debug clean build install -x test
 
 #test
