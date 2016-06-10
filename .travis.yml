@@ -21,8 +21,6 @@ install: true
 script:
   - ./gradlew clean build install distZip -x test
 
-#test
-
 deploy:
   provider: releases
   api_key: "GH_TOKEN"
@@ -30,3 +28,5 @@ deploy:
   skip_cleanup: true
   on:
     tags: true
+
+#test
