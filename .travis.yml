@@ -15,7 +15,7 @@ env:
 install: true
 
 script:
-  - ./gradlew clean build install distZip -x test
+  - ./gradlew clean build install -x test
 
 deploy:
   provider: releases
