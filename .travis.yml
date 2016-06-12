@@ -3,10 +3,6 @@ language: java
 jdk:
   - oraclejdk8
 
-services:
-  - rabbitmq
-  - redis-server
-
 sudo: false
 
 cache:
