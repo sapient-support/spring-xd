@@ -21,10 +21,10 @@ install: true
 script:
   - ./gradlew clean build install distZip -x test
 
-#deploy:
-#  provider: releases
-#  api_key: $GH_TOKEN
-#  file: "\home\travis\build\distributions\spring-xd-1.3.2.BUILD-SNAPSHOT-dist.zip"
+deploy:
+  provider: releases
+  api_key: $GH_TOKEN
+  file: "build\distributions\spring-xd-1.3.2.BUILD-SNAPSHOT-dist.zip"
 #  skip_cleanup: true
 #  on:
 #    tags: true
