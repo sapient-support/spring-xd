@@ -23,8 +23,5 @@ deploy:
   file: "build\distributions\spring-xd-1.3.2.BUILD-SNAPSHOT-dist.zip"
   skip_cleanup: true
   on:
-#    branch: master
     tags: true
     overwrite: true
-
-#test
