@@ -192,8 +192,8 @@ configure(javaProjects) { subproject ->
 	}
 
 	compileJava {
-		sourceCompatibility = 1.8
-		targetCompatibility = 1.8
+		sourceCompatibility = 1.7
+		targetCompatibility = 1.7
 		options.fork = true
 		options.forkOptions.with {
 			memoryMaximumSize = "512m"
@@ -201,8 +201,8 @@ configure(javaProjects) { subproject ->
 	}
 
 	compileTestJava {
-		sourceCompatibility = 1.8
-		targetCompatibility = 1.8
+		sourceCompatibility = 1.7
+		targetCompatibility = 1.7
 		options.fork = true
 		options.forkOptions.with {
 			memoryMaximumSize = "512m"
