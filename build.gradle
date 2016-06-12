@@ -185,15 +185,15 @@ configure(javaProjects) { subproject ->
 		versionManagement files(rootProject.file('dependencies.properties'))
 	}
 	startScripts.enabled = false
-	distZip.enabled = true
+	distZip.enabled = false
 
 	bootRepackage {
 		enabled = false
 	}
 
 	compileJava {
-		sourceCompatibility = 1.7
-		targetCompatibility = 1.7
+		sourceCompatibility = 1.8
+		targetCompatibility = 1.8
 		options.fork = true
 		options.forkOptions.with {
 			memoryMaximumSize = "512m"
@@ -201,8 +201,8 @@ configure(javaProjects) { subproject ->
 	}
 
 	compileTestJava {
-		sourceCompatibility = 1.7
-		targetCompatibility = 1.7
+		sourceCompatibility = 1.8
+		targetCompatibility = 1.8
 		options.fork = true
 		options.forkOptions.with {
 			memoryMaximumSize = "512m"
