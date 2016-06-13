@@ -15,12 +15,12 @@ env:
 install: true
 
 script:
-  - ./gradlew clean build install -x test
+  - ./gradlew dist -x test
 
 deploy:
   provider: releases
   api_key: $GH_TOKEN
-  file: "/home/travis/build/sapient-support/spring-xd/build/distributions/spring-xd-1.3.2.BUILD-SNAPSHOT-dist.zip"
+  file: "build/sapient-support/spring-xd/build/distributions/spring-xd-1.3.2.BUILD-SNAPSHOT-dist.zip"
   skip_cleanup: true
   on:
     overwrite: true
